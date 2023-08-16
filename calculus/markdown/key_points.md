@@ -224,3 +224,12 @@ $$
 $$
 
 ---
+
+### Differentiation Rules
+
+| Rules| Expression |
+| ---- | ---------- |
+| The **constant rule**: The derivative of any constant function is always 0 |  $\frac{d}{dx}(k) = 0$ |
+| The **constant multiple rule**: The derivative of a constant multiplied by a function is the constant multiplied by the derivative of the function | $\frac{d}{dx}[k \cdot f(x)] = k \cdot f'(x)$ |
+| The **sum rul**e: The derivative of a sum of functions is the sum of their derivatives | $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$ |
+| The **difference rule**: The derivative of a difference of functions is the difference of their derivatives | $\frac{d}{dx}[f(x) - g(x)] = f'(x) - g'(x)$ |
