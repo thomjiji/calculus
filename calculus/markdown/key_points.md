@@ -44,9 +44,9 @@ So, the limit exists and is equal to $2/3$.
 
 ### Intermediate Value Theorem (IVT)
 
-If a function `f(x)` is continuous on a closed interval `[a, b]` and k is any number
-between `f(a)` and `f(b)`, then there is at least one number c in the interval `[a, b]`
-such that `f( c) = k`.
+If a function $f(x)$ is continuous on a closed interval $[a, b]$ and $k$ is any number
+between $f(a)$ and $f(b)$, then there is at least one number $c$ in the interval $[a, b]$
+such that $f( c) = k$.
 
 The intermediate value theorem has two conditions:
 
