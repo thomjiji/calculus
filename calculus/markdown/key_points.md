@@ -45,8 +45,8 @@ So, the limit exists and is equal to $2/3$.
 ### Intermediate Value Theorem (IVT)
 
 If a function $f(x)$ is continuous on a closed interval $[a, b]$ and $k$ is any number
-between $f(a)$ and $f(b)$, then there is at least one number $c$ in the interval $[a, b]$
-such that $f( c) = k$.
+between $f(a)$ and $f(b)$, then there is at least one number $c$ in the interval 
+$[a, b]$ such that $f( c) = k$.
 
 The intermediate value theorem has two conditions:
 
@@ -215,12 +215,12 @@ So you can write $\sqrt[5]{x^3}$ as $x^{\frac{3}{5}}$.
 
 ---
 
-### The Power Rule | Derivative
+### The Power Rule (?)
 
-The power rule:
+If $n$ is any real number, then
 
 $$
-\frac{d}{dx} [x^n] = n x^{n-1}, \quad \text{for all } n \in \mathbb{R}
+\frac{d}{dx} (x^n) = n x^{n-1}, \quad n \neq 0
 $$
 
 ---
@@ -231,5 +231,47 @@ $$
 | ---- | ---------- |
 | The **constant rule**: The derivative of any constant function is always 0 |  $\frac{d}{dx}(k) = 0$ |
 | The **constant multiple rule**: The derivative of a constant multiplied by a function is the constant multiplied by the derivative of the function | $\frac{d}{dx}[k \cdot f(x)] = k \cdot f'(x)$ |
-| The **sum rul**e: The derivative of a sum of functions is the sum of their derivatives | $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$ |
+| The **sum rule**: The derivative of a sum of functions is the sum of their derivatives | $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$ |
 | The **difference rule**: The derivative of a difference of functions is the difference of their derivatives | $\frac{d}{dx}[f(x) - g(x)] = f'(x) - g'(x)$ |
+
+---
+
+### Derivatives of the Trigonometric Functions
+
+$$
+\frac{d}{dx} (\sin x) = \cos x \\
+\frac{d}{dx} (\cos x) = -\sin x \\
+$$
+
+#### Two Special Trigonometric Limits
+
+$$
+\lim_{\theta \to 0} \frac{\sin \theta}{\theta} = 1 \\
+\lim_{\theta \to 0} \frac{\cos \theta - 1}{\theta} = 0 \\
+$$
+
+### Derivative of $e$
+
+$$ \frac{d}{dx} e^x = e^x $$
+
+### Derivative of $\ln(x)$
+
+$$ \frac{d}{dx} [\ln(x)] = \frac{1}{x} $$
+
+### Product Rule
+
+If $f$ and $t$ are both differentiable, then
+
+$$
+\frac{d}{dx} [f(x) \cdot g(x)] = \frac{d}{dx}[f(x)] \cdot g(x) + f(x) \cdot \frac{d} 
+{dx}[g(x)]
+$$
+
+### Quotient Rule
+
+If $f$ and $t$ are both differentiable, then
+
+$$
+\frac{d}{dx} [\frac{f(x)}{g(x)}] = \frac{\frac{d}{dx} [f(x)] \cdot g(x) - f(x) \cdot 
+\frac{d}{dx}[g(x)]} {[g(x)]^2}
+$$
