@@ -207,16 +207,6 @@ Therefore, f is continuous at c.
 
 ---
 
-### General Form Property of Exponents
-
-The general form property of exponents is defined as follows:
-
-$$a^{\frac{m}{n}} = \sqrt[n]{a^m}$$
-
-So you can write $\sqrt[5]{x^3}$ as $x^{\frac{3}{5}}$.
-
----
-
 ### The Power Rule (?)
 
 If $n$ is any real number, then
@@ -240,10 +230,24 @@ $$
 
 ### Derivatives of the Trigonometric Functions
 
+$$ \frac{d}{dx} [\sin (x)] = \cos(x) $$
+$$ \frac{d}{dx} [\cos (x)] = -\sin(x) $$
+
 $$
-\frac{d}{dx} (\sin x) = \cos x \\
-\frac{d}{dx} (\cos x) = -\sin x \\
+\frac{d}{dx} [\tan (x)] = \frac{d}{dx} \left [\frac{\sin(x)}{\cos(x)} \right] = \frac
+{\cos(x) \cdot \cos(x) - \sin(x) \cdot (-\sin(x))}{\cos^2(x)} = \frac{1}{\cos^2(x)} = 
+\sec^2(x) 
 $$
+
+$$
+\frac{d}{dx} [\cot (x)] = \frac{d}{dx} \left[\frac{\cos(x)}{\sin(x)}\right] = 
+\frac{-\sin(x) \cdot \sin(x) - \cos(x) \cdot (\cos(x))}{\sin^2(x)} = -\frac{1}
+{\sin^2(x)} = -\csc^2(x) 
+$$
+
+$$ \frac{d}{dx} [\csc (x)] = -\frac{\cos(x)}{\sin^2(x)} = -\csc(x) \cdot \cot(x) $$
+$$ \frac{d}{dx} [\sec (x)] = \frac{\sin(x)}{\cos^2(x)} = \sec(x) \cdot \tan(x) $$
+
 
 #### Two Special Trigonometric Limits
 
@@ -274,6 +278,14 @@ $$
 If $f$ and $t$ are both differentiable, then
 
 $$
-\frac{d}{dx} [\frac{f(x)}{g(x)}] = \frac{\frac{d}{dx} [f(x)] \cdot g(x) - f(x) \cdot 
+\frac{d}{dx} \left[\frac{f(x)}{g(x)}\right] = \frac{\frac{d}{dx} [f(x)] \cdot g(x) - f(x) \cdot 
 \frac{d}{dx}[g(x)]} {[g(x)]^2}
+$$
+
+---
+
+### Chain Rule
+
+$$
+F\prime[f(g(x))] = f\prime(g(x)) \cdot g\prime(x)
 $$

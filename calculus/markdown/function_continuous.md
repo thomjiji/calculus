@@ -1,10 +1,9 @@
-
 ### Under what conditions can a function be considered continuous?
 
 A function f(x) is considered continuous at a point x=a if the following conditions are 
 all met:
 
-- Defined: The function f(x) is defined at x=a. Meaning you can substitute a into the 
+- Defined: The function f(x) is defined at x = a. Meaning you can substitute a into the 
 function and get a real number.
 
 - Limit Exists: The limit of the function as x approaches a exists. This means that as 
