@@ -5,3 +5,7 @@ matplotlib
 pandas
 numpy
 sympy
+
+black
+black[jupyter]
+ruff

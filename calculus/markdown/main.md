@@ -45,7 +45,7 @@ So, the limit exists and is equal to $2/3$.
 ### Intermediate Value Theorem (IVT)
 
 If a function $f(x)$ is continuous on a closed interval $[a, b]$ and $k$ is any number
-between $f(a)$ and $f(b)$, then there is at least one number $c$ in the interval 
+between $f(a)$ and $f(b)$, then there is at least one number $c$ in the interval
 $[a, b]$ such that $f( c) = k$.
 
 The intermediate value theorem has two conditions:
@@ -160,7 +160,7 @@ In the following, let's assume $f$ is differentiable at $c$.
 
    $$
    \lim_{{x \to c}} \frac{{f(x) - f(c)}}{{x - c}} \cdot \lim_{{x \to c}} (x - c) = f'(c)
-    \cdot \lim_{{x \to c}} (x - c)
+   \cdot \lim_{{x \to c}} (x - c)
    $$
 
    Here, we just rewrote $f'(c)$ in a form that involves $(x - c)$, without altering its
@@ -168,8 +168,8 @@ In the following, let's assume $f$ is differentiable at $c$.
 
 3. Setting limit to 0 The limit as $x$ approaches $c$ for $(x - c)$ is 0:
 
-   $$ 
-   \lim_{{x \to c}} (x - c) = 0 
+   $$
+   \lim_{{x \to c}} (x - c) = 0
    $$
 
    Hence, the right-side of the equation above becomes $f'(c) * 0 = 0$.
@@ -179,7 +179,7 @@ In the following, let's assume $f$ is differentiable at $c$.
    Using the multiplication law of limits, which states that the limit of a product of
    two functions is the product of their limits (provided they exist), we can write:
 
-   $$ \lim_{{x \to c}} \left( \frac{{f(x) - f(c)}}{{x - c}} \cdot (x - c) \right) = 0 $$
+   $$ \lim_{{x \to c}} \left[ \frac{{f(x) - f(c)}}{{x - c}} \cdot (x - c) \right] = 0 $$
 
 5. Simplify the limit Within the limit on the left side, (x - c) cancels out, leaving:
 
@@ -207,26 +207,35 @@ Therefore, f is continuous at c.
 
 ---
 
-### The Power Rule (?)
-
-If $n$ is any real number, then
-
-$$
-\frac{d}{dx} (x^n) = n x^{n-1}, \quad n \neq 0
-$$
-
----
-
 ### Differentiation Rules
 
-| Rules                                                                                                                                              | Expression                                   |
-|----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| The **constant rule**: The derivative of any constant function is always 0                                                                         | $\frac{d}{dx}(k) = 0$                        |
-| The **constant multiple rule**: The derivative of a constant multiplied by a function is the constant multiplied by the derivative of the function | $\frac{d}{dx}[k \cdot f(x)] = k \cdot f'(x)$ |
-| The **sum rule**: The derivative of a sum of functions is the sum of their derivatives                                                             | $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$  |
-| The **difference rule**: The derivative of a difference of functions is the difference of their derivatives                                        | $\frac{d}{dx}[f(x) - g(x)] = f'(x) - g'(x)$  |
+| Rules                  | Expression                                                                                                                      |
+|------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| Constant rule          | $\frac{d}{dx}(k) = 0$                                                                                                           |
+| Constant multiple rule | $\frac{d}{dx}[k \cdot f(x)] = k \cdot f'(x)$                                                                                    |
+| Sum rule               | $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$                                                                                     |
+| Difference rule        | $\frac{d}{dx}[f(x) - g(x)] = f'(x) - g'(x)$                                                                                     |
+| Power Rule             | $\frac{d}{dx} (x^n) = n x^{n-1}$                                                                                                |
+| Product Rule           | $\frac{d}{dx} [f(x) \cdot g(x)] = \frac{d}{dx}[f(x)] \cdot g(x) + f(x) \cdot \frac{d}{dx}[g(x)]$                                |
+| Quotient Rule          | $\frac{d}{dx} \left[\frac{f(x)}{g(x)}\right] = \frac{\frac{d}{dx} [f(x)] \cdot g(x) -f(x) \cdot \frac{d}{dx}[g(x)]} {[g(x)]^2}$ |
 
 ---
+
+### Chain Rule
+
+If $g$ is differentiable at $x$ and $f$ is differentiable at $g(x)$, then the composite
+function $F = f \circ g$ defined by $F(x) = f(g(x))$ is differentiable at $x$ and
+$F\prime$ is given by the product
+
+$$
+F\prime[f(g(x))] = f\prime(g(x)) \cdot g\prime(x)
+$$
+
+if $y = f(u)$ and $u = g(x)$ are both differentiable functions, then
+
+$$
+\frac{dy}{dx} = \frac{dv}{du} \cdot \frac{du}{dx}
+$$
 
 ### Derivatives of the Trigonometric Functions
 
@@ -235,19 +244,18 @@ $$ \frac{d}{dx} [\cos (x)] = -\sin(x) $$
 
 $$
 \frac{d}{dx} [\tan (x)] = \frac{d}{dx} \left [\frac{\sin(x)}{\cos(x)} \right] = \frac
-{\cos(x) \cdot \cos(x) - \sin(x) \cdot (-\sin(x))}{\cos^2(x)} = \frac{1}{\cos^2(x)} = 
-\sec^2(x) 
+{\cos(x) \cdot \cos(x) - \sin(x) \cdot (-\sin(x))}{\cos^2(x)} = \frac{1}{\cos^2(x)} =
+\sec^2(x)
 $$
 
 $$
-\frac{d}{dx} [\cot (x)] = \frac{d}{dx} \left[\frac{\cos(x)}{\sin(x)}\right] = 
+\frac{d}{dx} [\cot (x)] = \frac{d}{dx} \left[\frac{\cos(x)}{\sin(x)}\right] =
 \frac{-\sin(x) \cdot \sin(x) - \cos(x) \cdot (\cos(x))}{\sin^2(x)} = -\frac{1}
-{\sin^2(x)} = -\csc^2(x) 
+{\sin^2(x)} = -\csc^2(x)
 $$
 
 $$ \frac{d}{dx} [\csc (x)] = -\frac{\cos(x)}{\sin^2(x)} = -\csc(x) \cdot \cot(x) $$
 $$ \frac{d}{dx} [\sec (x)] = \frac{\sin(x)}{\cos^2(x)} = \sec(x) \cdot \tan(x) $$
-
 
 #### Two Special Trigonometric Limits
 
@@ -264,28 +272,100 @@ $$ \frac{d}{dx} e^x = e^x $$
 
 $$ \frac{d}{dx} [\ln(x)] = \frac{1}{x} $$
 
-### Product Rule
+### Composite and combined functions
 
-If $f$ and $t$ are both differentiable, then
+A composite function is where we make the output from one function, such as $u$, the
+input for another function, such as $w$.
 
-$$
-\frac{d}{dx} [f(x) \cdot g(x)] = \frac{d}{dx}[f(x)] \cdot g(x) + f(x) \cdot \frac{d} 
-{dx}[g(x)]
-$$
+We can also combine functions using arithmetic operations, but such a combination is not
+considered a composite function.
 
-### Quotient Rule
+Our two functions appear to be $x-8$ and $e^x$, but neither of them _takes the other
+as its input_.
 
-If $f$ and $t$ are both differentiable, then
+### Derivatives of General Exponential Functions
 
-$$
-\frac{d}{dx} \left[\frac{f(x)}{g(x)}\right] = \frac{\frac{d}{dx} [f(x)] \cdot g(x) - f(x) \cdot 
-\frac{d}{dx}[g(x)]} {[g(x)]^2}
-$$
+If $b$ is a constant, then
+
+$$ \frac{d}{dx} (b^x) = \ln(b) \cdot b^x $$
+
+### Derivatives of General Logarithmic Functions
+
+If $a$ is a constant, $a \neq 1$, then
+
+$$ \frac{d}{dx} \left[\log_a(x)\right] = \frac{1}{\ln(a) \cdot x} $$
 
 ---
 
-### Chain Rule
+$$ \frac{d}{dx} \left[\ln(u(x)) \right] = \frac{u\prime(x)}{u(x)} $$
 
-$$
-F\prime[f(g(x))] = f\prime(g(x)) \cdot g\prime(x)
-$$
+### Derivative of Inverse Function
+
+Let's say $f(x)$ and $g(x)$ are inverse function (and both are differentiable), so by
+definition, we have this equation:
+
+$$ f(g(x)) = x $$
+
+We take derivative of both sides:
+
+$$ \frac{d}{dx} f(g(x)) = \frac{d}{dx} (x)$$
+
+Use chain rule to the left-hand side, right-hand side equals to 1. Finally, we get:
+
+$$ f'(x) = \frac{1}{g'(f(x))} $$
+
+### Derivative of Inverse Sine, Cosine, Tangent
+
+$$\frac{d}{dx} \left[\sin^{-1}(x)\right] = \frac{1}{\sqrt{1 - x^2}} $$
+
+$$\frac{d}{dx} \left[\cos^{-1}(x)\right] = -\frac{1}{\sqrt{1 - x^2}} $$
+
+$$\frac{d}{dx} \left[\tan^{-1}(x)\right] = \frac{1}{1 + x^2} $$
+
+---
+
+### Interpret motion graph
+
+The direction of movement is indicated by the velocity's sign:
+
+- If the velocity is positive, the object is moving forward.
+- If the velocity is negative, the object is moving backward.
+- If the velocity is zero, the object is not moving.
+
+The direction of the position graph indicates the direction of movement:
+
+- If the graph is increasing, the object is moving forward.
+- If the graph is decreasing, the object is moving backward.
+- If the graph is nether increasing not decreasing, the object is not moving. This
+  happens at extremum points of the graph.
+
+Velocity as a function of time is the derivative of position:
+
+$$ v(t) = x'(t) $$
+
+Acceleration as a function of time is the derivative of velocity, which is the second
+derivative of position:
+
+$$ a(t) = v'(t) = x''(t) $$
+
+#### Velocity and Acceleration
+
+Velocity: The rate of change of _displacement_ (位移) with respect to time.
+
+Acceleration: The instantaneous rate of change of _velocity_ with respect to time.
+
+| Velocity | Acceleration | Speed      |
+|----------|--------------|------------|
+| Positive | Positive     | Increasing |
+| Negative | Negative     | Increasing |
+| Positive | Negative     | Decreasing |
+| Negative | Positive     | Decreasing |
+
+If the acceleration is positive, and velocity is positive, that means the magnitude
+of velocity is increasing, so that means the speed is increasing.
+
+If the acceleration is negative, and the velocity is also negative, that also means the
+speed is increasing.
+
+But the velocity and acceleration have different signs, that mean the speed is
+decreasing.
