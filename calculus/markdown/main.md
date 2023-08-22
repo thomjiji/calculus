@@ -110,40 +110,37 @@ $$
 \frac{dy}{dx} = \frac{dv}{du} \cdot \frac{du}{dx}
 $$
 
+---
+
 ### Derivatives of the Trigonometric Functions
 
-$$ \frac{d}{dx} [\sin (x)] = \cos(x) $$
-$$ \frac{d}{dx} [\cos (x)] = -\sin(x) $$
+| Trigonometrics | Derivative                                                                                                         |
+|----------------|--------------------------------------------------------------------------------------------------------------------|
+| sin            | $\frac{d}{dx} [\sin (x)] = \cos(x)$                                                                                |
+| cos            | $\frac{d}{dx} [\cos (x)] = -\sin(x)$                                                                               |
+| tan            | $\frac{d}{dx} [\tan (x)] = \frac{d}{dx} \left [\frac{\sin(x)}{\cos(x)} \right] = \frac{1}{\cos^2(x)} = \sec^2(x)$  |
+| cot            | $\frac{d}{dx} [\cot (x)] = \frac{d}{dx} \left[\frac{\cos(x)}{\sin(x)}\right] = -\frac{1} {\sin^2(x)} = -\csc^2(x)$ |
+| csc            | $\frac{d}{dx} [\csc (x)] = -\frac{\cos(x)}{\sin^2(x)} = -\csc(x) \cdot \cot(x)$                                    |
+| sec            | $\frac{d}{dx} [\sec (x)] = \frac{\sin(x)}{\cos^2(x)} = \sec(x) \cdot \tan(x)$                                      |
 
-$$
-\frac{d}{dx} [\tan (x)] = \frac{d}{dx} \left [\frac{\sin(x)}{\cos(x)} \right] = \frac
-{\cos(x) \cdot \cos(x) - \sin(x) \cdot (-\sin(x))}{\cos^2(x)} = \frac{1}{\cos^2(x)} =
-\sec^2(x)
-$$
+| Two Special Trigonometric Limits                         |
+|----------------------------------------------------------|
+| $\lim_{\theta \to 0} \frac{\sin \theta}{\theta} = 1$     | 
+| $\lim_{\theta \to 0} \frac{\cos \theta - 1}{\theta} = 0$ |
 
-$$
-\frac{d}{dx} [\cot (x)] = \frac{d}{dx} \left[\frac{\cos(x)}{\sin(x)}\right] =
-\frac{-\sin(x) \cdot \sin(x) - \cos(x) \cdot (\cos(x))}{\sin^2(x)} = -\frac{1}
-{\sin^2(x)} = -\csc^2(x)
-$$
-
-$$ \frac{d}{dx} [\csc (x)] = -\frac{\cos(x)}{\sin^2(x)} = -\csc(x) \cdot \cot(x) $$
-$$ \frac{d}{dx} [\sec (x)] = \frac{\sin(x)}{\cos^2(x)} = \sec(x) \cdot \tan(x) $$
-
-#### Two Special Trigonometric Limits
-
-$$
-\lim_{\theta \to 0} \frac{\sin \theta}{\theta} = 1 \\
-\lim_{\theta \to 0} \frac{\cos \theta - 1}{\theta} = 0 \\
-$$
+---
 
 ### Derivative of $e$
 
 $$ \frac{d}{dx} e^x = e^x $$
 
+---
+
 ### Derivative of $\ln(x)$
 
 $$ \frac{d}{dx} [\ln(x)] = \frac{1}{x} $$
+
+---
 
 ### Composite and combined functions
 
@@ -156,11 +153,15 @@ considered a composite function.
 Our two functions appear to be $x-8$ and $e^x$, but neither of them _takes the other
 as its input_.
 
+---
+
 ### Derivatives of Exponential Functions
 
 If $b$ is a constant, then
 
 $$ \frac{d}{dx} (b^x) = \ln(b) \cdot b^x $$
+
+---
 
 ### Derivatives of Logarithmic Functions
 
@@ -260,3 +261,7 @@ decreasing.
 This is the core of our solution: by relating the quantities (i.e., $A$ and $r$) we were
 able to relate their rates (i.e., $A'$ and $r'$) through differentiation. This is why
 these problems are called "related rates".
+
+For example, what we know is $\frac{dy}{dt}$ ($y'(t)$), what we are seeking for is 
+$\frac{dx}{dt}$ ($x'(t)$). So, if we can find the relationship between y and x, then 
+take derivative on them, we can find derivative of $x$ by solve for $\frac{dx}{dt}$.

@@ -191,3 +191,25 @@ In the following, let's assume $f$ is differentiable at $c$.
 Therefore, f is continuous at c.
 
 </details>
+
+Here is another example that makes me think about the meaning of implicit
+differentiation and what it can bring to us:
+
+"A 10-meter ladder is sliding down a vertical wall, so the distance between the top of
+the ladder and the ground is decreasing at 3 meters per minute. At a certain instant,
+the bottom of the ladder is 6 meters from the wall. What's the rate of change of the
+area formed by the ladder at that instant (in square meters per minute)?"
+
+In this question, I set the distance between the top of the ladder and the ground as y,
+the bottom of the ladder from the wall is x, the certain point (that instant) as t_0,
+the ares formed is A. Then we have these know information:
+
+1. y’(t) = -3 meters/minute;
+2. x(t_0) = 6 m;
+3. The length of the ladder is 10 m;
+4. y(t_0) = sqrt(10^2 - 6^2) = 8 m.
+
+What we seek for is A’(t_0). For that, we have to figure out A’(t). Here is the key
+point: we know A(t) = (x(t) * y(t)) / 2, it’s the relationship between right triangle’s
+sides. We take derivative on both sides on equation, then we can get the relationship of
+their derivatives. One of the derivatives is exactly what we're seeking for, A’(t).
