@@ -1,47 +1,3 @@
-The given expression is:
-
-$$\lim_{x \to -\infty}\frac{\sqrt{4x^4 - x}}{2x^2 + 3}$$
-
-Firstly, let's factor out the largest power of $x$ from the numerator and denominator:
-
-Numerator: $\sqrt{4x^4 - x}$ = $\sqrt{4(x^4) - (x)}$ = $\sqrt{4x^4 - 4x^3 + x}$
-
-Denominator: $2x^2 + 3$
-
-Now, as $x$ approaches $-\infty$, the term $x^4$ becomes negligible compared to $4x^3$.
-Therefore, we can simplify the expression as follows:
-
-$$\lim_{x \to -\infty}\frac{\sqrt{4x^4 - x}}{2x^2 + 3} \approx \lim_{x \to
--\infty}\frac{\sqrt{4x^3 - x}}{2x^2 + 3}$$
-
-Since the square root is always positive, we can drop the negative sign on the
-numerator:
-
-$$\lim_{x \to -\infty}\frac{\sqrt{4x^3 - x}}{2x^2 + 3} = \lim_{x \to
--\infty}\frac{\sqrt{4x^3}}{2x^2 + 3}$$
-
-As $x$ approaches $-\infty$, the fraction approaches $0/0$, which is an indeterminate
-form. However, we can use L'Hopital's rule to find the limit:
-
-Applying L'Hopital's rule, we have:
-
-$$\lim_{x \to -\infty}\frac{\sqrt{4x^3}}{2x^2 + 3} = \lim_{x \to
--\infty}\frac{4x^2}{6x + 12}$$
-
-Cancelling out the common factors of $x^2$ between the numerator and denominator:
-
-$$\lim_{x \to -\infty}\frac{4x^2}{6x + 12} = \lim_{x \to -\infty}\frac{4}{6 +
-\frac{12}{x}}$$
-
-As $x$ approaches $-\infty$, the fraction approaches $4/6 = 2/3$. Therefore, the limit
-of the original expression is:
-
-$$\lim_{x \to -\infty}\frac{\sqrt{4x^4 - x}}{2x^2 + 3} = \frac{2}{3}$$
-
-So, the limit exists and is equal to $2/3$.
-
----
-
 ### Intermediate Value Theorem (IVT)
 
 If a function $f(x)$ is continuous on a closed interval $[a, b]$ and $k$ is any number
@@ -124,89 +80,6 @@ immediately know that it's also continuous.
 
 ---
 
-### Proof of "Differentiability implies continuity"
-
-$$
-(1) \lim_{{x \to c}} \frac{{f(x) - f(c)}}{{x - c}} = f'(c) \\
-(2) \lim_{{x \to c}} \frac{{f(x) - f(c)}}{{x - c}} \cdot \lim_{{x \to c}} (x - c) =
-f'(c) \cdot \lim_{{x \to c}} (x - c) \\
-(3) \lim_{{x \to c}} (x - c) = 0 \\
-\text{From (2) and (3) we have} \\
-(4) \lim_{{x \to c}} \frac{{f(x) - f(c)}}{{x - c}} \cdot \lim_{{x \to c}} (x - c) =
-f'(c) \cdot 0 \\
-\text{From (4) and the rule about limit multiplication we have} \\
-(5) \lim_{{x \to c}} \left(\frac{{f(x) - f(c)}}{{x - c}} \cdot (x - c)\right) = 0 \\
-(6) \lim_{{x \to c}} (f(x) - f(c)) = 0 \\
-(7) \lim_{{x \to c}} f(x) - \lim_{{x \to c}} f(c) = 0 \\
-(8) \lim_{{x \to c}} f(x) - f(c) = 0 \\
-(9) \lim_{{x \to c}} f(x) = f(c)
-$$
-
-Proof breakdown:
-
-In the following, let's assume $f$ is differentiable at $c$.
-
-1. Differentiability
-
-   By definition, a function $f$ is differentiable at $c$ if the following limit exists:
-
-   $$ f'(c) = \lim_{{x \to c}} \frac{{f(x) - f(c)}}{{x - c}} $$
-
-   This means the rate of change of $f$ at point $c$ exists and is finite.
-
-2. Rewriting the limit in continuity form
-
-   We multiply and divide by $(x - c)$ to form the limit that defines continuity:
-
-   $$
-   \lim_{{x \to c}} \frac{{f(x) - f(c)}}{{x - c}} \cdot \lim_{{x \to c}} (x - c) = f'(c)
-   \cdot \lim_{{x \to c}} (x - c)
-   $$
-
-   Here, we just rewrote $f'(c)$ in a form that involves $(x - c)$, without altering its
-   value.
-
-3. Setting limit to 0 The limit as $x$ approaches $c$ for $(x - c)$ is 0:
-
-   $$
-   \lim_{{x \to c}} (x - c) = 0
-   $$
-
-   Hence, the right-side of the equation above becomes $f'(c) * 0 = 0$.
-
-4. Multiplication law of limits
-
-   Using the multiplication law of limits, which states that the limit of a product of
-   two functions is the product of their limits (provided they exist), we can write:
-
-   $$ \lim_{{x \to c}} \left[ \frac{{f(x) - f(c)}}{{x - c}} \cdot (x - c) \right] = 0 $$
-
-5. Simplify the limit Within the limit on the left side, (x - c) cancels out, leaving:
-
-   $$ \lim_{{x \to c}} (f(x) - f(c)) = 0 $$
-
-6. Difference law of limits The difference law of limits allows us to say:
-
-   $$ \lim_{{x \to c}} f(x) - \lim_{{x \to c}} f(c) = 0 $$
-
-7. Constant rule of limits The limit of a constant is that constant:
-
-   $$ \lim_{{x \to c}} f(x) - f(c) = 0 $$
-
-   Leading to:
-
-   $$ \lim_{{x \to c}} f(x) = f(c) $$
-
-8. Continuity
-
-   By definition, a function f is continuous at c if:
-
-   $$ \lim_{{x \to c}} f(x) = f(c) $$
-
-Therefore, f is continuous at c.
-
----
-
 ### Differentiation Rules
 
 | Rules                  | Expression                                                                                                                      |
@@ -283,13 +156,13 @@ considered a composite function.
 Our two functions appear to be $x-8$ and $e^x$, but neither of them _takes the other
 as its input_.
 
-### Derivatives of General Exponential Functions
+### Derivatives of Exponential Functions
 
 If $b$ is a constant, then
 
 $$ \frac{d}{dx} (b^x) = \ln(b) \cdot b^x $$
 
-### Derivatives of General Logarithmic Functions
+### Derivatives of Logarithmic Functions
 
 If $a$ is a constant, $a \neq 1$, then
 
@@ -339,6 +212,17 @@ The direction of the position graph indicates the direction of movement:
 - If the graph is nether increasing not decreasing, the object is not moving. This
   happens at extremum points of the graph.
 
+Speed is the magnitude of velocity. When analyzing linear motion,
+
+$$ \text{speed} = | \text{velocity} | $$
+
+So the object is speeding up whenever the absolute value of the velocity is increasing,
+and slowing down whenever the absolute value of the velocity is decreasing.
+
+When the velocity is zero, the object isn't speeding up or slowing down.
+
+---
+
 Velocity as a function of time is the derivative of position:
 
 $$ v(t) = x'(t) $$
@@ -350,9 +234,8 @@ $$ a(t) = v'(t) = x''(t) $$
 
 #### Velocity and Acceleration
 
-Velocity: The rate of change of _displacement_ (位移) with respect to time.
-
-Acceleration: The instantaneous rate of change of _velocity_ with respect to time.
+- Velocity: The rate of change of _displacement_ (位移) with respect to time.
+- Acceleration: The instantaneous rate of change of _velocity_ with respect to time.
 
 | Velocity | Acceleration | Speed      |
 |----------|--------------|------------|
@@ -369,3 +252,11 @@ speed is increasing.
 
 But the velocity and acceleration have different signs, that mean the speed is
 decreasing.
+
+---
+
+### Related rates
+
+This is the core of our solution: by relating the quantities (i.e., $A$ and $r$) we were
+able to relate their rates (i.e., $A'$ and $r'$) through differentiation. This is why
+these problems are called "related rates".
