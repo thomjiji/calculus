@@ -67,9 +67,9 @@ $$f'(a) = \lim_{{x \to a}} \frac{{f(x) - f(a)}}{x - a}$$
 ---
 
 The whole underlying idea of the formal definition of limits is to find the slope of the
-secant line between these two points, and then take the limit as $h$ approaches 0. And
+secant line between these two points, and then take the limit as $h$ approaches $0$. And
 the secant line is going to become a better and better approximation of the tangent line
-at x.
+at $x$.
 
 ---
 
@@ -255,7 +255,7 @@ $$ a(t) = v'(t) = x''(t) $$
 - Acceleration: The instantaneous rate of change of _velocity_ with respect to time.
 
 | Velocity | Acceleration | Speed      |
-|----------|--------------|------------|
+| -------- | ------------ | ---------- |
 | Positive | Positive     | Increasing |
 | Negative | Negative     | Increasing |
 | Positive | Negative     | Decreasing |
