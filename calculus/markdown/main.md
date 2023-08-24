@@ -99,7 +99,7 @@ immediately know that it's also continuous.
 ### Differentiation Rules
 
 | Rules                  | Expression                                                                                                                      |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+|------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Constant rule          | $\frac{d}{dx}(k) = 0$                                                                                                           |
 | Constant multiple rule | $\frac{d}{dx}[k \cdot f(x)] = k \cdot f'(x)$                                                                                    |
 | Sum rule               | $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$                                                                                     |
@@ -131,7 +131,7 @@ $$
 ### Derivatives of the Trigonometric Functions
 
 | Trigonometric | Derivative                                                                                                         |
-| ------------- | ------------------------------------------------------------------------------------------------------------------ |
+|---------------|--------------------------------------------------------------------------------------------------------------------|
 | sin           | $\frac{d}{dx} [\sin (x)] = \cos(x)$                                                                                |
 | cos           | $\frac{d}{dx} [\cos (x)] = -\sin(x)$                                                                               |
 | tan           | $\frac{d}{dx} [\tan (x)] = \frac{d}{dx} \left [\frac{\sin(x)}{\cos(x)} \right] = \frac{1}{\cos^2(x)} = \sec^2(x)$  |
@@ -140,7 +140,7 @@ $$
 | sec           | $\frac{d}{dx} [\sec (x)] = \frac{\sin(x)}{\cos^2(x)} = \sec(x) \cdot \tan(x)$                                      |
 
 | Two Special Trigonometric Limits                         |
-| -------------------------------------------------------- |
+|----------------------------------------------------------|
 | $\lim_{\theta \to 0} \frac{\sin \theta}{\theta} = 1$     |
 | $\lim_{\theta \to 0} \frac{\cos \theta - 1}{\theta} = 0$ |
 
@@ -255,7 +255,7 @@ $$ a(t) = v'(t) = x''(t) $$
 - Acceleration: The instantaneous rate of change of _velocity_ with respect to time.
 
 | Velocity | Acceleration | Speed      |
-| -------- | ------------ | ---------- |
+|----------|--------------|------------|
 | Positive | Positive     | Increasing |
 | Negative | Negative     | Increasing |
 | Positive | Negative     | Decreasing |
@@ -295,7 +295,6 @@ The tangent line gives us a "best" linear approximation to the function $h$ near
 point $x = 0$ (or $x = a$). If we were to graph the function $h$ and the line $y= 4x -
 5$ together, the two would be very close together near $x = 0$ (or $x = a$), although
 they may diverge as we move away or zoom out from this point.
-exp(x)
 
 ### L'Hôpital's rule
 
@@ -321,7 +320,7 @@ derivative. It says that for any differentiable function $f$ and an interval $[a
 is equal to the function's average rate of change over $[a, b]$.
 
 Graphically, the theorem says that for any arc (弧线) between two endpoints, there's a
-point at which the tangent the the arc is parallel to the secant through its endpoints.
+point at which the tangent the arc is parallel to the secant through its endpoints.
 
 > **Formal definition**
 >
@@ -339,5 +338,27 @@ point at which the tangent the the arc is parallel to the secant through its end
 > $$ f(b) - f(a) = f'(c)(b - a) $$
 
 The key to use the mean value theorem, even before you think about using it, you have to
-make sure that you are continuous over the closed interval and differentiable over the
-open interval.
+make sure that you are **continuous** over the closed interval and **differentiable**
+over the open interval.
+
+---
+
+### Critical number
+
+A critical number of a function $f$ is a number $c$ in the domain of $f$ such that
+either $f'(c) = 0$ or $f'(c)$ does not exist.
+
+### Fermat's Theorem
+
+If $f$ has a local maximum or minimum at $c$, and if $f'(c)$ exists, then $f'(c) = 0$.
+
+---
+
+### Intervals on which a function is increasing or decreasing
+
+The intervals where a function is increasing (or decreasing) correspond to the intervals
+where its derivative is positive (or negative).
+
+A function can only change its direction from increasing to decreasing and vice versa
+between its critical points and the points where the function itself is undefined.
+So finding critical points is the key.
