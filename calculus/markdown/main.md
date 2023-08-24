@@ -9,7 +9,7 @@ The intermediate value theorem has two conditions:
 - Function $f$ is continuous over the interval $[a, b]$.
 - The value $d$ lies between $f(a)$ and $f(b)$
 
-We *must* establish these two conditions to conclude that there is a value $c$ in
+We _must_ establish these two conditions to conclude that there is a value $c$ in
 the interval $[a, b]$ for which $g(x) = d$ (another way to phrase this conclusion is
 that the equation $g(x) = d$ has a solution where $a <= x <= b$).
 
@@ -23,11 +23,27 @@ continuous at $x = L$), then
 
 $$\displaystyle\lim_{x \to c} u(u(x)) = u(\lim_{x \to c} u(x)) = u(L)$$
 
+#### Dealing with composite function's limits
+
+When dealing with **composite exponential functions**, we can let $y$ equals to that
+function, then take natural log on both sides:
+
+$$
+y = (2x - 1)^\frac{1}{x - 1}
+$$
+
+$$
+\ln(y) = \ln((2x - 1)^\frac{1}{x - 1}) = \frac{1}{x - 1} \cdot \ln(2x-1) =
+\frac{\ln(2x-1)}{x - 1}
+$$
+
+By doing this, we can bring the complex exponent in front.
+
 ---
 
 ### Squeeze Theorem
 
-The *squeeze theorem* tells us that if we have three function $f$, $g$, and $h$ such
+The _squeeze theorem_ tells us that if we have three function $f$, $g$, and $h$ such
 that...
 
 - $g(x) <= f(x) <= h(x)$ for all $x$-values other than $x = c$ in an interval round
@@ -59,10 +75,10 @@ at x.
 
 ### Differentiability Implies Continuity
 
-There are three cases where a function is *not differentiable*:
+There are three cases where a function is _not differentiable_:
 
 1. Wherever the function isn't continuous
-2. Wherever the graph of the function has a *vertical* tangent line
+2. Wherever the graph of the function has a _vertical_ tangent line
 3. Wherever the graph of the function has a sharp turn
 
 ---
@@ -83,7 +99,7 @@ immediately know that it's also continuous.
 ### Differentiation Rules
 
 | Rules                  | Expression                                                                                                                      |
-|------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | Constant rule          | $\frac{d}{dx}(k) = 0$                                                                                                           |
 | Constant multiple rule | $\frac{d}{dx}[k \cdot f(x)] = k \cdot f'(x)$                                                                                    |
 | Sum rule               | $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$                                                                                     |
@@ -114,18 +130,18 @@ $$
 
 ### Derivatives of the Trigonometric Functions
 
-| Trigonometrics | Derivative                                                                                                         |
-|----------------|--------------------------------------------------------------------------------------------------------------------|
-| sin            | $\frac{d}{dx} [\sin (x)] = \cos(x)$                                                                                |
-| cos            | $\frac{d}{dx} [\cos (x)] = -\sin(x)$                                                                               |
-| tan            | $\frac{d}{dx} [\tan (x)] = \frac{d}{dx} \left [\frac{\sin(x)}{\cos(x)} \right] = \frac{1}{\cos^2(x)} = \sec^2(x)$  |
-| cot            | $\frac{d}{dx} [\cot (x)] = \frac{d}{dx} \left[\frac{\cos(x)}{\sin(x)}\right] = -\frac{1} {\sin^2(x)} = -\csc^2(x)$ |
-| csc            | $\frac{d}{dx} [\csc (x)] = -\frac{\cos(x)}{\sin^2(x)} = -\csc(x) \cdot \cot(x)$                                    |
-| sec            | $\frac{d}{dx} [\sec (x)] = \frac{\sin(x)}{\cos^2(x)} = \sec(x) \cdot \tan(x)$                                      |
+| Trigonometric | Derivative                                                                                                         |
+| ------------- | ------------------------------------------------------------------------------------------------------------------ |
+| sin           | $\frac{d}{dx} [\sin (x)] = \cos(x)$                                                                                |
+| cos           | $\frac{d}{dx} [\cos (x)] = -\sin(x)$                                                                               |
+| tan           | $\frac{d}{dx} [\tan (x)] = \frac{d}{dx} \left [\frac{\sin(x)}{\cos(x)} \right] = \frac{1}{\cos^2(x)} = \sec^2(x)$  |
+| cot           | $\frac{d}{dx} [\cot (x)] = \frac{d}{dx} \left[\frac{\cos(x)}{\sin(x)}\right] = -\frac{1} {\sin^2(x)} = -\csc^2(x)$ |
+| csc           | $\frac{d}{dx} [\csc (x)] = -\frac{\cos(x)}{\sin^2(x)} = -\csc(x) \cdot \cot(x)$                                    |
+| sec           | $\frac{d}{dx} [\sec (x)] = \frac{\sin(x)}{\cos^2(x)} = \sec(x) \cdot \tan(x)$                                      |
 
 | Two Special Trigonometric Limits                         |
-|----------------------------------------------------------|
-| $\lim_{\theta \to 0} \frac{\sin \theta}{\theta} = 1$     | 
+| -------------------------------------------------------- |
+| $\lim_{\theta \to 0} \frac{\sin \theta}{\theta} = 1$     |
 | $\lim_{\theta \to 0} \frac{\cos \theta - 1}{\theta} = 0$ |
 
 ---
@@ -258,10 +274,70 @@ decreasing.
 
 ### Related rates
 
-This is the core of our solution: by relating the quantities (i.e., $A$ and $r$) we were
-able to relate their rates (i.e., $A'$ and $r'$) through differentiation. This is why
-these problems are called "related rates".
+This is the core of our solution: by relating the quantities (i.e., $A$ and $r$) we
+were able to relate their rates (i.e., $A'$ and $r'$) through differentiation. This is
+why these problems are called "related rates".
 
-For example, what we know is $\frac{dy}{dt}$ ($y'(t)$), what we are seeking for is 
-$\frac{dx}{dt}$ ($x'(t)$). So, if we can find the relationship between y and x, then 
+For example, what we know is $\frac{dy}{dt}$ ($y'(t)$), what we are seeking for is
+$\frac{dx}{dt}$ ($x'(t)$). So, if we can find the relationship between $y$ and $x$, then
 take derivative on them, we can find derivative of $x$ by solve for $\frac{dx}{dt}$.
+
+---
+
+### Linear approximation
+
+But what they're suggesting that we do is use this tangent line. If we know the
+equation of this tangent line here, we can say what the tangent line equals when x
+equals 1.9? When x equals 1.9, it equals that point over there. And then we could use
+that as our approximation.
+
+The tangent line gives us a "best" linear approximation to the function $h$ near the
+point $x = 0$ (or $x = a$). If we were to graph the function $h$ and the line $y= 4x -
+5$ together, the two would be very close together near $x = 0$ (or $x = a$), although
+they may diverge as we move away or zoom out from this point.
+exp(x)
+
+### L'Hôpital's rule
+
+L'Hôpital's rule states that for functions $f$ and $g$ which are differentiable on an
+open interval $I$ except possibly at a point $c$ contained in $I$, if $\lim_{x \to c}
+f(x) = \lim_{x \to c} g(x) = 0$ or $±\infty$, and $g'(x) \neq 0$ for all $x$ in $I$ with
+$x \neq c$, and $\lim_{x \to c} \frac{f'(x)}{g'(x)}$ exists, then
+
+$$
+\displaystyle \lim _{x\to c}{\frac {f(x)}{g(x)}}=\lim _{x\to c}{\frac {f'(x)}{g'(x)}}
+$$
+
+The differentiation of the numerator and denominator often simplifies the quotient or
+converts it to a limit that can be evaluated directly.
+
+---
+
+### Mean value theorem (MVT)
+
+The mean value theorem connects the average rate of change of a function to its
+derivative. It says that for any differentiable function $f$ and an interval $[a, b]$
+(within the domain of $f$), there exists a number $c$ within $(a, b)$ such that $f'(c)$
+is equal to the function's average rate of change over $[a, b]$.
+
+Graphically, the theorem says that for any arc (弧线) between two endpoints, there's a
+point at which the tangent the the arc is parallel to the secant through its endpoints.
+
+> **Formal definition**
+>
+> Let $f$ be a function that satisfies the following hypotheses:
+>
+> 1. $f$ is continuous on the closed interval $[a, b]$.
+> 2. $f$ is differentiable on the open interval $(a, b)$.
+>
+> Then there is a number $c$ in $(a, b)$ such that
+>
+> $$ f'(c) = \frac{f(b) - f(a)}{b - a} $$
+>
+> Or, equivalently,
+>
+> $$ f(b) - f(a) = f'(c)(b - a) $$
+
+The key to use the mean value theorem, even before you think about using it, you have to
+make sure that you are continuous over the closed interval and differentiable over the
+open interval.

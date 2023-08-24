@@ -184,11 +184,11 @@ In the following, let's assume $f$ is differentiable at $c$.
 
 8. Continuity
 
-   By definition, a function f is continuous at c if:
+   By definition, a function $f$ is continuous at $c$ if:
 
    $$ \lim_{{x \to c}} f(x) = f(c) $$
 
-Therefore, f is continuous at c.
+Therefore, $f$ is continuous at $c$.
 
 </details>
 

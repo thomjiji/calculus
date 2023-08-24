@@ -1,6 +1,7 @@
 torch
 notebook
 jupyter
+ipykernel
 matplotlib
 pandas
 numpy
