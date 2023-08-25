@@ -99,7 +99,7 @@ immediately know that it's also continuous.
 ### Differentiation Rules
 
 | Rules                  | Expression                                                                                                                      |
-|------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | Constant rule          | $\frac{d}{dx}(k) = 0$                                                                                                           |
 | Constant multiple rule | $\frac{d}{dx}[k \cdot f(x)] = k \cdot f'(x)$                                                                                    |
 | Sum rule               | $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$                                                                                     |
@@ -131,7 +131,7 @@ $$
 ### Derivatives of the Trigonometric Functions
 
 | Trigonometric | Derivative                                                                                                         |
-|---------------|--------------------------------------------------------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------------------------------------------------------ |
 | sin           | $\frac{d}{dx} [\sin (x)] = \cos(x)$                                                                                |
 | cos           | $\frac{d}{dx} [\cos (x)] = -\sin(x)$                                                                               |
 | tan           | $\frac{d}{dx} [\tan (x)] = \frac{d}{dx} \left [\frac{\sin(x)}{\cos(x)} \right] = \frac{1}{\cos^2(x)} = \sec^2(x)$  |
@@ -140,7 +140,7 @@ $$
 | sec           | $\frac{d}{dx} [\sec (x)] = \frac{\sin(x)}{\cos^2(x)} = \sec(x) \cdot \tan(x)$                                      |
 
 | Two Special Trigonometric Limits                         |
-|----------------------------------------------------------|
+| -------------------------------------------------------- |
 | $\lim_{\theta \to 0} \frac{\sin \theta}{\theta} = 1$     |
 | $\lim_{\theta \to 0} \frac{\cos \theta - 1}{\theta} = 0$ |
 
@@ -255,7 +255,7 @@ $$ a(t) = v'(t) = x''(t) $$
 - Acceleration: The instantaneous rate of change of _velocity_ with respect to time.
 
 | Velocity | Acceleration | Speed      |
-|----------|--------------|------------|
+| -------- | ------------ | ---------- |
 | Positive | Positive     | Increasing |
 | Negative | Negative     | Increasing |
 | Positive | Negative     | Decreasing |
@@ -362,3 +362,69 @@ where its derivative is positive (or negative).
 A function can only change its direction from increasing to decreasing and vice versa
 between its critical points and the points where the function itself is undefined.
 So finding critical points is the key.
+
+### Relative extrema
+
+**Remember**:
+
+1. We must not assume that any critical point is an extremum. Instead, we should check
+   out critical points to see if the function is defined at those points and the
+   derivative changes signs at those points.
+1. When we analyze increasing and decreasing intervals, we must look for all points
+   where the derivative is equal to zero _and_ all points where the function or its
+   derivative is undefined. If you miss any of these points, you will probably end up
+   with a wrong sign chart.
+
+After we've found points where the function changes its direction, we must check
+whether the function is defined at those points. Otherwise, this isn't a relative
+extremum.
+
+### Absolute extrema
+
+An **absolute maximum** point is a point where the function obtains its greatest
+possible value. Similarly, an **absolute minimum** point is a point where the function
+obtains its least possible value.
+
+These extreme values are obtained, either on a relative extremum point within the
+interval, or on the endpoints of the interval.
+
+### Extreme value theorem
+
+If a function is continuous on a closed interval $[a,b]$, then the function must have a
+maximum and a minimum on the interval.
+
+> **Formal definition**
+>
+> If $f$ is continuous on a closed interval $[a, b]$, then $f$ attains an absolute
+> maximum value $f(c)$ and an absolute minimum value $f(d)$ at some numbers $c$ and
+> $d$ in $[a, b]$.
+
+### Concavity (concave up if first derivative increases, concave down if it decreases)
+
+| **Concave up**        | equivalent to |              |
+| --------------------- | :-----------: | ------------ |
+| $g'(x)$ is increasing |      =>       | $g''(x) > 0$ |
+
+| **Concave down**      | equivalent to |              |
+| --------------------- | :-----------: | ------------ |
+| $g'(x)$ is decreasing |      =>       | $g''(x) < 0$ |
+
+- $g'(x) > 0$ means $g$ is increasing.
+- $g'(x) < 0$ means $g$ is decreasing.
+- $g''(x) > 0$ means the slope of $g$ is increasing ($g$ is concave up).
+- $g''(x) < 0$ means the slope of $g$ is decreasing ($g$ is concave down).
+
+### Inflection point (second derivative switches signs)
+
+Inflection points are points where the function changes concavity, i.e., from being
+"concave up" (the slope of the function is increasing) to "concave down" (the slope
+of the function is decreasing) or vice versa. They can be found by considering where
+**the second derivative changes signs**.
+
+Inflection points will occur when the second derivative is either zero or undefined.
+Even if critical points are found, they can only be considered as candidates before
+actually testing them.
+
+Finding inflection points are similar to find extremum points. Instead of looking for
+points where the derivative changes its sign, we are looking for points where the
+*second derivative* changes its sign.
