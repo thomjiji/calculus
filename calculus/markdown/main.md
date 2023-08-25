@@ -1,4 +1,4 @@
-### Intermediate Value Theorem (IVT)
+## Intermediate Value Theorem (IVT)
 
 If a function $f(x)$ is continuous on a closed interval $[a, b]$ and $k$ is any number
 between $f(a)$ and $f(b)$, then there is at least one number $c$ in the interval
@@ -15,7 +15,7 @@ that the equation $g(x) = d$ has a solution where $a <= x <= b$).
 
 ---
 
-### Property of limits of composite functions
+## Property of limits of composite functions
 
 If $u$ are functions such that $\displaystyle\lim_{x \to c} u(x) = L$ and
 $\displaystyle\lim_{x \to L} u(x) = u(L)$ (which means both limits exist and $u$ is
@@ -23,7 +23,7 @@ continuous at $x = L$), then
 
 $$\displaystyle\lim_{x \to c} u(u(x)) = u(\lim_{x \to c} u(x)) = u(L)$$
 
-#### Dealing with composite function's limits
+### Dealing with composite function's limits
 
 When dealing with **composite exponential functions**, we can let $y$ equals to that
 function, then take natural log on both sides:
@@ -41,7 +41,7 @@ By doing this, we can bring the complex exponent in front.
 
 ---
 
-### Squeeze Theorem
+## Squeeze Theorem
 
 The _squeeze theorem_ tells us that if we have three function $f$, $g$, and $h$ such
 that...
@@ -54,7 +54,7 @@ Then we can conclude that $\displaystyle\lim_{x \to c} f(x) = L$.
 
 ---
 
-### Derivative of Function
+## Derivative of Function
 
 The derivative of function $f$ at the point where $x = a$ is defined by:
 
@@ -73,7 +73,7 @@ at $x$.
 
 ---
 
-### Differentiability Implies Continuity
+## Differentiability Implies Continuity
 
 There are three cases where a function is _not differentiable_:
 
@@ -96,7 +96,7 @@ immediately know that it's also continuous.
 
 ---
 
-### Differentiation Rules
+## Differentiation Rules
 
 | Rules                  | Expression                                                                                                                      |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -110,7 +110,7 @@ immediately know that it's also continuous.
 
 ---
 
-### Chain Rule
+## Chain Rule
 
 If $g$ is differentiable at $x$ and $f$ is differentiable at $g(x)$, then the composite
 function $F = f \circ g$ defined by $F(x) = f(g(x))$ is differentiable at $x$ and
@@ -128,7 +128,7 @@ $$
 
 ---
 
-### Derivatives of the Trigonometric Functions
+## Derivatives of the Trigonometric Functions
 
 | Trigonometric | Derivative                                                                                                         |
 | ------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -146,19 +146,19 @@ $$
 
 ---
 
-### Derivative of $e$
+## Derivative of $e$
 
 $$ \frac{d}{dx} e^x = e^x $$
 
 ---
 
-### Derivative of $\ln(x)$
+## Derivative of $\ln(x)$
 
 $$ \frac{d}{dx} [\ln(x)] = \frac{1}{x} $$
 
 ---
 
-### Composite and combined functions
+## Composite and combined functions
 
 A composite function is where we make the output from one function, such as $u$, the
 input for another function, such as $w$.
@@ -171,7 +171,7 @@ as its input_.
 
 ---
 
-### Derivatives of Exponential Functions
+## Derivatives of Exponential Functions
 
 If $b$ is a constant, then
 
@@ -179,7 +179,7 @@ $$ \frac{d}{dx} (b^x) = \ln(b) \cdot b^x $$
 
 ---
 
-### Derivatives of Logarithmic Functions
+## Derivatives of Logarithmic Functions
 
 If $a$ is a constant, $a \neq 1$, then
 
@@ -189,7 +189,7 @@ $$ \frac{d}{dx} \left[\log_a(x)\right] = \frac{1}{\ln(a) \cdot x} $$
 
 $$ \frac{d}{dx} \left[\ln(u(x)) \right] = \frac{u\prime(x)}{u(x)} $$
 
-### Derivative of Inverse Function
+## Derivative of Inverse Function
 
 Let's say $f(x)$ and $g(x)$ are inverse function (and both are differentiable), so by
 definition, we have this equation:
@@ -204,7 +204,7 @@ Use chain rule to the left-hand side, right-hand side equals to 1. Finally, we g
 
 $$ f'(x) = \frac{1}{g'(f(x))} $$
 
-### Derivative of Inverse Sine, Cosine, Tangent
+## Derivative of Inverse Sine, Cosine, Tangent
 
 $$\frac{d}{dx} \left[\sin^{-1}(x)\right] = \frac{1}{\sqrt{1 - x^2}} $$
 
@@ -214,7 +214,7 @@ $$\frac{d}{dx} \left[\tan^{-1}(x)\right] = \frac{1}{1 + x^2} $$
 
 ---
 
-### Interpret motion graph
+## Interpret motion graph
 
 The direction of movement is indicated by the velocity's sign:
 
@@ -249,7 +249,7 @@ derivative of position:
 
 $$ a(t) = v'(t) = x''(t) $$
 
-#### Velocity and Acceleration
+### Velocity and Acceleration
 
 - Velocity: The rate of change of _displacement_ (位移) with respect to time.
 - Acceleration: The instantaneous rate of change of _velocity_ with respect to time.
@@ -272,7 +272,7 @@ decreasing.
 
 ---
 
-### Related rates
+## Related rates
 
 This is the core of our solution: by relating the quantities (i.e., $A$ and $r$) we
 were able to relate their rates (i.e., $A'$ and $r'$) through differentiation. This is
@@ -284,7 +284,7 @@ take derivative on them, we can find derivative of $x$ by solve for $\frac{dx}{d
 
 ---
 
-### Linear approximation
+## Linear approximation
 
 But what they're suggesting that we do is use this tangent line. If we know the
 equation of this tangent line here, we can say what the tangent line equals when x
@@ -296,7 +296,7 @@ point $x = 0$ (or $x = a$). If we were to graph the function $h$ and the line $y
 5$ together, the two would be very close together near $x = 0$ (or $x = a$), although
 they may diverge as we move away or zoom out from this point.
 
-### L'Hôpital's rule
+## L'Hôpital's rule
 
 L'Hôpital's rule states that for functions $f$ and $g$ which are differentiable on an
 open interval $I$ except possibly at a point $c$ contained in $I$, if $\lim_{x \to c}
@@ -312,7 +312,7 @@ converts it to a limit that can be evaluated directly.
 
 ---
 
-### Mean value theorem (MVT)
+## Mean value theorem (MVT)
 
 The mean value theorem connects the average rate of change of a function to its
 derivative. It says that for any differentiable function $f$ and an interval $[a, b]$
@@ -343,18 +343,18 @@ over the open interval.
 
 ---
 
-### Critical number
+## Critical number
 
 A critical number of a function $f$ is a number $c$ in the domain of $f$ such that
 either $f'(c) = 0$ or $f'(c)$ does not exist.
 
-### Fermat's Theorem
+## Fermat's Theorem
 
 If $f$ has a local maximum or minimum at $c$, and if $f'(c)$ exists, then $f'(c) = 0$.
 
 ---
 
-### Intervals on which a function is increasing or decreasing
+## Intervals on which a function is increasing or decreasing
 
 The intervals where a function is increasing (or decreasing) correspond to the intervals
 where its derivative is positive (or negative).
@@ -363,14 +363,14 @@ A function can only change its direction from increasing to decreasing and vice 
 between its critical points and the points where the function itself is undefined.
 So finding critical points is the key.
 
-### Relative extrema
+## Relative extrema
 
 **Remember**:
 
 1. We must not assume that any critical point is an extremum. Instead, we should check
    out critical points to see if the function is defined at those points and the
    derivative changes signs at those points.
-1. When we analyze increasing and decreasing intervals, we must look for all points
+2. When we analyze increasing and decreasing intervals, we must look for all points
    where the derivative is equal to zero _and_ all points where the function or its
    derivative is undefined. If you miss any of these points, you will probably end up
    with a wrong sign chart.
@@ -379,7 +379,15 @@ After we've found points where the function changes its direction, we must check
 whether the function is defined at those points. Otherwise, this isn't a relative
 extremum.
 
-### Absolute extrema
+### Second Derivative Test
+
+Suppose $f(x)$ is a function of $x$ that is twice differentiable at a *stationary point* 
+(including minimum point, maximum point and inflection point) $x_0$:
+
+1. If $f''(x_0) > 0$ then $f$ has a local minimum at $x_0$.
+2. If $f''(x_0) < 0$ then $f$ has a local maximum at $x_0$.
+
+## Absolute extrema
 
 An **absolute maximum** point is a point where the function obtains its greatest
 possible value. Similarly, an **absolute minimum** point is a point where the function
@@ -388,7 +396,7 @@ obtains its least possible value.
 These extreme values are obtained, either on a relative extremum point within the
 interval, or on the endpoints of the interval.
 
-### Extreme value theorem
+## Extreme value theorem
 
 If a function is continuous on a closed interval $[a,b]$, then the function must have a
 maximum and a minimum on the interval.
@@ -399,7 +407,7 @@ maximum and a minimum on the interval.
 > maximum value $f(c)$ and an absolute minimum value $f(d)$ at some numbers $c$ and
 > $d$ in $[a, b]$.
 
-### Concavity (concave up if first derivative increases, concave down if it decreases)
+## Concavity (concave up if first derivative increases, concave down if it decreases)
 
 | **Concave up**        | equivalent to |              |
 | --------------------- | :-----------: | ------------ |
@@ -414,7 +422,7 @@ maximum and a minimum on the interval.
 - $g''(x) > 0$ means the slope of $g$ is increasing ($g$ is concave up).
 - $g''(x) < 0$ means the slope of $g$ is decreasing ($g$ is concave down).
 
-### Inflection point (second derivative switches signs)
+## Inflection point (拐点) (second derivative switches signs)
 
 Inflection points are points where the function changes concavity, i.e., from being
 "concave up" (the slope of the function is increasing) to "concave down" (the slope
@@ -425,6 +433,6 @@ Inflection points will occur when the second derivative is either zero or undefi
 Even if critical points are found, they can only be considered as candidates before
 actually testing them.
 
-Finding inflection points are similar to find extremum points. Instead of looking for
+Finding inflection points is similar to finding extreme points. Instead of looking for
 points where the derivative changes its sign, we are looking for points where the
 *second derivative* changes its sign.
