@@ -26,10 +26,10 @@ $$\displaystyle\lim_{x \to c} u(u(x)) = u(\lim_{x \to c} u(x)) = u(L)$$
 When dealing with **composite exponential functions**, we can let $y$ equals to that
 function, then take natural log on both sides:
 
-|                                        |                                                                                                      |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Step 1: Let $y$ equal to               | $y = (2x - 1)^\frac{1}{x - 1}$                                                                       |
-| Step 2: Take natrual log on both sides | $\ln(y) = \ln((2x - 1)^\frac{1}{x - 1}) = \frac{1}{x - 1} \cdot \ln(2x-1) = \frac{\ln(2x-1)}{x - 1}$ |
+| Steps                             | Process                                                                                              |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| 1: Let $y$ equal to               | $y = (2x - 1)^\frac{1}{x - 1}$                                                                       |
+| 2: Take natrual log on both sides | $\ln(y) = \ln((2x - 1)^\frac{1}{x - 1}) = \frac{1}{x - 1} \cdot \ln(2x-1) = \frac{\ln(2x-1)}{x - 1}$ |
 
 By doing this, we can bring the complex exponent in front.
 
@@ -61,7 +61,7 @@ secant line between these two points, and then take the limit as $h$ approaches 
 the secant line is going to become a better and better approximation of the tangent line
 at $x$.
 
-## Differentiability Implies Continuity
+## Differentiability Implies **Continuity**
 
 There are three cases where a function is _not differentiable_:
 
