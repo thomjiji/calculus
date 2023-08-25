@@ -13,8 +13,6 @@ We _must_ establish these two conditions to conclude that there is a value $c$ i
 the interval $[a, b]$ for which $g(x) = d$ (another way to phrase this conclusion is
 that the equation $g(x) = d$ has a solution where $a <= x <= b$).
 
----
-
 ## Property of limits of composite functions
 
 If $u$ are functions such that $\displaystyle\lim_{x \to c} u(x) = L$ and
@@ -28,18 +26,12 @@ $$\displaystyle\lim_{x \to c} u(u(x)) = u(\lim_{x \to c} u(x)) = u(L)$$
 When dealing with **composite exponential functions**, we can let $y$ equals to that
 function, then take natural log on both sides:
 
-$$
-y = (2x - 1)^\frac{1}{x - 1}
-$$
-
-$$
-\ln(y) = \ln((2x - 1)^\frac{1}{x - 1}) = \frac{1}{x - 1} \cdot \ln(2x-1) =
-\frac{\ln(2x-1)}{x - 1}
-$$
+|                                        |                                                                                                      |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Step 1: Let $y$ equal to               | $y = (2x - 1)^\frac{1}{x - 1}$                                                                       |
+| Step 2: Take natrual log on both sides | $\ln(y) = \ln((2x - 1)^\frac{1}{x - 1}) = \frac{1}{x - 1} \cdot \ln(2x-1) = \frac{\ln(2x-1)}{x - 1}$ |
 
 By doing this, we can bring the complex exponent in front.
-
----
 
 ## Squeeze Theorem
 
@@ -51,8 +43,6 @@ that...
 - $\displaystyle\lim_{x \to c} g(x) = \lim_{x \to c} h(x) = L$
 
 Then we can conclude that $\displaystyle\lim_{x \to c} f(x) = L$.
-
----
 
 ## Derivative of Function
 
@@ -70,8 +60,6 @@ The whole underlying idea of the formal definition of limits is to find the slop
 secant line between these two points, and then take the limit as $h$ approaches $0$. And
 the secant line is going to become a better and better approximation of the tangent line
 at $x$.
-
----
 
 ## Differentiability Implies Continuity
 
@@ -94,8 +82,6 @@ If a function is differentiable then it's also continuous. This property is very
 when working with functions, because if we know that a function is differentiable, we
 immediately know that it's also continuous.
 
----
-
 ## Differentiation Rules
 
 | Rules                  | Expression                                                                                                                      |
@@ -107,8 +93,6 @@ immediately know that it's also continuous.
 | Power Rule             | $\frac{d}{dx} (x^n) = n x^{n-1}$                                                                                                |
 | Product Rule           | $\frac{d}{dx} [f(x) \cdot g(x)] = \frac{d}{dx}[f(x)] \cdot g(x) + f(x) \cdot \frac{d}{dx}[g(x)]$                                |
 | Quotient Rule          | $\frac{d}{dx} \left[\frac{f(x)}{g(x)}\right] = \frac{\frac{d}{dx} [f(x)] \cdot g(x) -f(x) \cdot \frac{d}{dx}[g(x)]} {[g(x)]^2}$ |
-
----
 
 ## Chain Rule
 
@@ -126,8 +110,6 @@ $$
 \frac{dy}{dx} = \frac{dv}{du} \cdot \frac{du}{dx}
 $$
 
----
-
 ## Derivatives of the Trigonometric Functions
 
 | Trigonometric | Derivative                                                                                                         |
@@ -144,19 +126,13 @@ $$
 | $\lim_{\theta \to 0} \frac{\sin \theta}{\theta} = 1$     |
 | $\lim_{\theta \to 0} \frac{\cos \theta - 1}{\theta} = 0$ |
 
----
-
 ## Derivative of $e$
 
 $$ \frac{d}{dx} e^x = e^x $$
 
----
-
 ## Derivative of $\ln(x)$
 
 $$ \frac{d}{dx} [\ln(x)] = \frac{1}{x} $$
-
----
 
 ## Composite and combined functions
 
@@ -169,23 +145,17 @@ considered a composite function.
 Our two functions appear to be $x-8$ and $e^x$, but neither of them _takes the other
 as its input_.
 
----
-
 ## Derivatives of Exponential Functions
 
 If $b$ is a constant, then
 
 $$ \frac{d}{dx} (b^x) = \ln(b) \cdot b^x $$
 
----
-
 ## Derivatives of Logarithmic Functions
 
 If $a$ is a constant, $a \neq 1$, then
 
 $$ \frac{d}{dx} \left[\log_a(x)\right] = \frac{1}{\ln(a) \cdot x} $$
-
----
 
 $$ \frac{d}{dx} \left[\ln(u(x)) \right] = \frac{u\prime(x)}{u(x)} $$
 
@@ -211,8 +181,6 @@ $$\frac{d}{dx} \left[\sin^{-1}(x)\right] = \frac{1}{\sqrt{1 - x^2}} $$
 $$\frac{d}{dx} \left[\cos^{-1}(x)\right] = -\frac{1}{\sqrt{1 - x^2}} $$
 
 $$\frac{d}{dx} \left[\tan^{-1}(x)\right] = \frac{1}{1 + x^2} $$
-
----
 
 ## Interpret motion graph
 
@@ -270,8 +238,6 @@ speed is increasing.
 But the velocity and acceleration have different signs, that mean the speed is
 decreasing.
 
----
-
 ## Related rates
 
 This is the core of our solution: by relating the quantities (i.e., $A$ and $r$) we
@@ -281,8 +247,6 @@ why these problems are called "related rates".
 For example, what we know is $\frac{dy}{dt}$ ($y'(t)$), what we are seeking for is
 $\frac{dx}{dt}$ ($x'(t)$). So, if we can find the relationship between $y$ and $x$, then
 take derivative on them, we can find derivative of $x$ by solve for $\frac{dx}{dt}$.
-
----
 
 ## Linear approximation
 
@@ -309,8 +273,6 @@ $$
 
 The differentiation of the numerator and denominator often simplifies the quotient or
 converts it to a limit that can be evaluated directly.
-
----
 
 ## Mean value theorem (MVT)
 
@@ -341,8 +303,6 @@ The key to use the mean value theorem, even before you think about using it, you
 make sure that you are **continuous** over the closed interval and **differentiable**
 over the open interval.
 
----
-
 ## Critical number
 
 A critical number of a function $f$ is a number $c$ in the domain of $f$ such that
@@ -351,8 +311,6 @@ either $f'(c) = 0$ or $f'(c)$ does not exist.
 ## Fermat's Theorem
 
 If $f$ has a local maximum or minimum at $c$, and if $f'(c)$ exists, then $f'(c) = 0$.
-
----
 
 ## Intervals on which a function is increasing or decreasing
 
@@ -382,7 +340,7 @@ extremum.
 ### Second Derivative Test
 
 Suppose $f(x)$ is a function of $x$ that is twice differentiable at a *stationary point* 
-(including minimum point, maximum point and inflection point) $x_0$:
+(minimum point, maximum point and inflection point) $x_0$:
 
 1. If $f''(x_0) > 0$ then $f$ has a local minimum at $x_0$.
 2. If $f''(x_0) < 0$ then $f$ has a local maximum at $x_0$.

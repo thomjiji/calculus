@@ -1,4 +1,4 @@
-### Pythagorean Trigonometric Identity
+### Pythagorean trigonometric identity
 
 $$\sin ^{2} \theta+\cos ^{2} \theta=1$$
 

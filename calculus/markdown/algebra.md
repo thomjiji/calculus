@@ -1,4 +1,4 @@
-### The Power of a Power Rule
+### The power of a power rule
 
 $$ (a^m)^n = a^{m \times n} $$
 
@@ -6,7 +6,7 @@ $$ (a^m)^n = a^{m \times n} $$
 
 $$ \sec(x) = \frac{1}{\cos(x)} $$
 
-### General Form Property of Exponents
+### General form property of exponents
 
 The general form property of exponents is defined as follows:
 
