@@ -59,7 +59,7 @@ That being said, you should always be aware of these nuances when switching betw
 mathematical notation and programming syntax.
 
 User:
-If I want to wrtten log base 8, so I write log_8(x)?
+If I want to written log base 8, so I write log_8(x)?
 
 Assistant:
 In SymPy, if you want to calculate the logarithm of a number with base 8, you'll use
@@ -84,8 +84,7 @@ Please note that SymPy will return results in their simplified form. For
 example, `log(64, 8)` will return `2` as the result since 8^2 equals 64.
 
 User:
-Is this expression a composite function? log_4(x
-)
+Is this expression a composite function? log_4(x)
 
 Assistant:
 The expression `log_4(x)` is not a composite function; it's a simple logarithmic
@@ -4003,8 +4002,7 @@ Remember, not all limits can be calculated using these techniques. In some cases
 may need to use more advanced methods.
 
 User:
-What're properties
-of limits?
+What are properties of limits?
 
 Assistant:
 Properties of limits provide useful rules for finding the limit of functions based on

@@ -308,39 +308,38 @@ over the open interval.
 A critical number of a function $f$ is a number $c$ in the domain of $f$ such that
 either $f'(c) = 0$ or $f'(c)$ does not exist.
 
-## Fermat's Theorem
-
-If $f$ has a local maximum or minimum at $c$, and if $f'(c)$ exists, then $f'(c) = 0$.
-
 ## Intervals on which a function is increasing or decreasing
 
-The intervals where a function is increasing (or decreasing) correspond to the intervals
-where its derivative is positive (or negative).
+| $f'$'s status               |       | which means $f$   |
+| --------------------------- | :---: | ----------------- |
+| $f' > 0$ ($f'$ is positive) |  <=>  | $f$ is increasing |
+| $f' < 0$ ($f'$ is negative) |  <=>  | $f$ is decreasing |
+
+- The intervals where the derivative $f'$ is positive (i.e., above the $x$-axis) are
+  the intervals where the function $f$ is increasing.
+- The intervals where the derivative $f'$ is negative (i.e., below the $x$-axis) are
+  the intervals where the function $f$ is decreasing.
 
 A function can only change its direction from increasing to decreasing and vice versa
 between its critical points and the points where the function itself is undefined.
-So finding critical points is the key.
 
 ## Relative extrema
 
-**Remember**:
+- Local minimum is the point where $f' = 0$ and $f'' > 0$ (means $f'$ is increasing).
+- Local maximum is the point where $f' = 0$ and $f'' < 0$ (means $f'$ is decreasing).
 
 1. We must not assume that any critical point is an extremum. Instead, we should check
    out critical points to see if the function is defined at those points and the
-   derivative changes signs at those points.
+   **derivative changes signs** at those points.
 2. When we analyze increasing and decreasing intervals, we must look for all points
-   where the derivative is equal to zero _and_ all points where the function or its
+   where the derivative is equal to zero **and** all points where the function or its
    derivative is undefined. If you miss any of these points, you will probably end up
    with a wrong sign chart.
 
-After we've found points where the function changes its direction, we must check
-whether the function is defined at those points. Otherwise, this isn't a relative
-extremum.
-
 ### Second Derivative Test
 
-Suppose $f(x)$ is a function of $x$ that is twice differentiable at a *stationary point* 
-(minimum point, maximum point and inflection point) $x_0$:
+Suppose $f(x)$ is a function of $x$ that is twice differentiable at a *stationary point*
+(minimum point, maximum point and inflection point) $x_0$, $f'(x_0) = 0$, then:
 
 1. If $f''(x_0) > 0$ then $f$ has a local minimum at $x_0$.
 2. If $f''(x_0) < 0$ then $f$ has a local maximum at $x_0$.
@@ -365,7 +364,9 @@ maximum and a minimum on the interval.
 > maximum value $f(c)$ and an absolute minimum value $f(d)$ at some numbers $c$ and
 > $d$ in $[a, b]$.
 
-## Concavity (concave up if first derivative increases, concave down if it decreases)
+## Concavity
+
+Concave up if the $f'$ increases, concave down if $f'$ decreases.
 
 | **Concave up**        | equivalent to |              |
 | --------------------- | :-----------: | ------------ |
@@ -375,17 +376,12 @@ maximum and a minimum on the interval.
 | --------------------- | :-----------: | ------------ |
 | $g'(x)$ is decreasing |      =>       | $g''(x) < 0$ |
 
-- $g'(x) > 0$ means $g$ is increasing.
-- $g'(x) < 0$ means $g$ is decreasing.
-- $g''(x) > 0$ means the slope of $g$ is increasing ($g$ is concave up).
-- $g''(x) < 0$ means the slope of $g$ is decreasing ($g$ is concave down).
-
-## Inflection point (拐点) (second derivative switches signs)
+## Inflection point (拐点)
 
 Inflection points are points where the function changes concavity, i.e., from being
-"concave up" (the slope of the function is increasing) to "concave down" (the slope
-of the function is decreasing) or vice versa. They can be found by considering where
-**the second derivative changes signs**.
+"concave up" (the slope of the function - $f'$ is increasing) to "concave down" (the
+slope of the function  - $f'$ is decreasing) or vice versa. They can be found by
+considering where **the second derivative changes signs**.
 
 Inflection points will occur when the second derivative is either zero or undefined.
 Even if critical points are found, they can only be considered as candidates before
@@ -394,3 +390,5 @@ actually testing them.
 Finding inflection points is similar to finding extreme points. Instead of looking for
 points where the derivative changes its sign, we are looking for points where the
 *second derivative* changes its sign.
+
+$f'$'s (relative) minimum or maximum point is possibly inflection point.
