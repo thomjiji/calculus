@@ -27,7 +27,7 @@ When dealing with **composite exponential functions**, we can let $y$ equals to 
 function, then take natural log on both sides:
 
 | Steps                             | Process                                                                                              |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------- |
+|-----------------------------------|------------------------------------------------------------------------------------------------------|
 | 1: Let $y$ equal to               | $y = (2x - 1)^\frac{1}{x - 1}$                                                                       |
 | 2: Take natrual log on both sides | $\ln(y) = \ln((2x - 1)^\frac{1}{x - 1}) = \frac{1}{x - 1} \cdot \ln(2x-1) = \frac{\ln(2x-1)}{x - 1}$ |
 
@@ -85,7 +85,7 @@ immediately know that it's also continuous.
 ## Differentiation Rules
 
 | Rules                  | Expression                                                                                                                      |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+|------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Constant rule          | $\frac{d}{dx}(k) = 0$                                                                                                           |
 | Constant multiple rule | $\frac{d}{dx}[k \cdot f(x)] = k \cdot f'(x)$                                                                                    |
 | Sum rule               | $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$                                                                                     |
@@ -113,7 +113,7 @@ $$
 ## Derivatives of the Trigonometric Functions
 
 | Trigonometric | Derivative                                                                                                         |
-| ------------- | ------------------------------------------------------------------------------------------------------------------ |
+|---------------|--------------------------------------------------------------------------------------------------------------------|
 | sin           | $\frac{d}{dx} [\sin (x)] = \cos(x)$                                                                                |
 | cos           | $\frac{d}{dx} [\cos (x)] = -\sin(x)$                                                                               |
 | tan           | $\frac{d}{dx} [\tan (x)] = \frac{d}{dx} \left [\frac{\sin(x)}{\cos(x)} \right] = \frac{1}{\cos^2(x)} = \sec^2(x)$  |
@@ -122,7 +122,7 @@ $$
 | sec           | $\frac{d}{dx} [\sec (x)] = \frac{\sin(x)}{\cos^2(x)} = \sec(x) \cdot \tan(x)$                                      |
 
 | Two Special Trigonometric Limits                         |
-| -------------------------------------------------------- |
+|----------------------------------------------------------|
 | $\lim_{\theta \to 0} \frac{\sin \theta}{\theta} = 1$     |
 | $\lim_{\theta \to 0} \frac{\cos \theta - 1}{\theta} = 0$ |
 
@@ -223,7 +223,7 @@ $$ a(t) = v'(t) = x''(t) $$
 - Acceleration: The instantaneous rate of change of _velocity_ with respect to time.
 
 | Velocity | Acceleration | Speed      |
-| -------- | ------------ | ---------- |
+|----------|--------------|------------|
 | Positive | Positive     | Increasing |
 | Negative | Negative     | Increasing |
 | Positive | Negative     | Decreasing |
@@ -299,9 +299,12 @@ point at which the tangent the arc is parallel to the secant through its endpoin
 >
 > $$ f(b) - f(a) = f'(c)(b - a) $$
 
-The key to use the mean value theorem, even before you think about using it, you have to
-make sure that you are **continuous** over the closed interval and **differentiable**
-over the open interval.
+The mean value theorem has two conditions:
+
+1. Function $g$ is **differentiable** over the open interval $(a, b)$ and **continuous**
+   over the closed interval $[a, b]$.
+2. The average rate of change is equal to the slope of that point on the function. $f'(
+   c) = \frac{f(b) - f(a)}{b - a}$
 
 ## Critical number
 
@@ -310,10 +313,10 @@ either $f'(c) = 0$ or $f'(c)$ does not exist.
 
 ## Intervals on which a function is increasing or decreasing
 
-| $f'$'s status               |       | which means $f$   |
-| --------------------------- | :---: | ----------------- |
-| $f' > 0$ ($f'$ is positive) |  <=>  | $f$ is increasing |
-| $f' < 0$ ($f'$ is negative) |  <=>  | $f$ is decreasing |
+| $f'$'s status               |     | which means $f$   |
+|-----------------------------|:---:|-------------------|
+| $f' > 0$ ($f'$ is positive) | <=> | $f$ is increasing |
+| $f' < 0$ ($f'$ is negative) | <=> | $f$ is decreasing |
 
 - The intervals where the derivative $f'$ is positive (i.e., above the $x$-axis) are
   the intervals where the function $f$ is increasing.
@@ -369,18 +372,18 @@ maximum and a minimum on the interval.
 Concave up if the $f'$ increases, concave down if $f'$ decreases.
 
 | **Concave up**        | equivalent to |              |
-| --------------------- | :-----------: | ------------ |
+|-----------------------|:-------------:|--------------|
 | $g'(x)$ is increasing |      =>       | $g''(x) > 0$ |
 
 | **Concave down**      | equivalent to |              |
-| --------------------- | :-----------: | ------------ |
+|-----------------------|:-------------:|--------------|
 | $g'(x)$ is decreasing |      =>       | $g''(x) < 0$ |
 
 ## Inflection point (拐点)
 
 Inflection points are points where the function changes concavity, i.e., from being
 "concave up" (the slope of the function - $f'$ is increasing) to "concave down" (the
-slope of the function  - $f'$ is decreasing) or vice versa. They can be found by
+slope of the function - $f'$ is decreasing) or vice versa. They can be found by
 considering where **the second derivative changes signs**.
 
 Inflection points will occur when the second derivative is either zero or undefined.
