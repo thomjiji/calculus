@@ -26,10 +26,10 @@ $$\displaystyle\lim_{x \to c} u(u(x)) = u(\lim_{x \to c} u(x)) = u(L)$$
 When dealing with **composite exponential functions**, we can let $y$ equals to that
 function, then take natural log on both sides:
 
-| Steps                             | Process                                                                                              |
-|-----------------------------------|------------------------------------------------------------------------------------------------------|
-| 1: Let $y$ equal to               | $y = (2x - 1)^\frac{1}{x - 1}$                                                                       |
-| 2: Take natrual log on both sides | $\ln(y) = \ln((2x - 1)^\frac{1}{x - 1}) = \frac{1}{x - 1} \cdot \ln(2x-1) = \frac{\ln(2x-1)}{x - 1}$ |
+| Steps | Process                                                                                              |
+| ----- | ---------------------------------------------------------------------------------------------------- |
+| 1     | $y = (2x - 1)^\frac{1}{x - 1}$                                                                       |
+| 2     | $\ln(y) = \ln((2x - 1)^\frac{1}{x - 1}) = \frac{1}{x - 1} \cdot \ln(2x-1) = \frac{\ln(2x-1)}{x - 1}$ |
 
 By doing this, we can bring the complex exponent in front.
 
@@ -61,6 +61,37 @@ secant line between these two points, and then take the limit as $h$ approaches 
 the secant line is going to become a better and better approximation of the tangent line
 at $x$.
 
+## Under what conditions can a function be considered continuous?
+
+A function $f(x)$ is considered continuous at a point $x = a$ if the following
+conditions are all met:
+
+- Defined: The function $f(x)$ is defined at $x = a$. Meaning you can substitute a into
+  the function and get a real number.
+
+- Limit Exists: The limit of the function as $x$ approaches $a$ exists. This means
+  that as $x$ gets closer and closer to a from either direction, $f(x)$ approaches some
+  specific value $L$.
+
+- Function Equals Limit: The value of the function at $a$ is equal to the limit of the
+  function as $x$ approaches $a$. In other words, $f(a) = L$.
+
+The function $f(x)$ is said to be continuous on an interval if it is continuous at
+every point in that interval. It is said to be continuous everywhere or simply
+continuous if it is continuous at every point over its entire domain.
+
+So, Mathematically, A function $f(x)$ is continuous at $x = a$ if 
+$\lim_{{x \to a}} f(x) = f(a)$
+
+Or more explicitly, it is continuous at $x = a$ if 
+$\lim_{{x \to a^-}} f(x) = f(a) = \lim_{{x \to a^+}} f(x)$
+
+Where $\lim_{{x \to a^-}} f(x)$ is the limit as $x$ approaches $a$ from the left, $f(a)$ 
+is the function value at $a$, and $\lim_{{x \to a^+}} f(x)$ is the limit as $x$ 
+approaches $a$ from the right.
+
+If all three of these quantities are the same, then $f(x)$ is continuous at $x = a$.
+
 ## Differentiability Implies **Continuity**
 
 There are three cases where a function is _not differentiable_:
@@ -85,7 +116,7 @@ immediately know that it's also continuous.
 ## Differentiation Rules
 
 | Rules                  | Expression                                                                                                                      |
-|------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | Constant rule          | $\frac{d}{dx}(k) = 0$                                                                                                           |
 | Constant multiple rule | $\frac{d}{dx}[k \cdot f(x)] = k \cdot f'(x)$                                                                                    |
 | Sum rule               | $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$                                                                                     |
@@ -113,7 +144,7 @@ $$
 ## Derivatives of the Trigonometric Functions
 
 | Trigonometric | Derivative                                                                                                         |
-|---------------|--------------------------------------------------------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------------------------------------------------------ |
 | sin           | $\frac{d}{dx} [\sin (x)] = \cos(x)$                                                                                |
 | cos           | $\frac{d}{dx} [\cos (x)] = -\sin(x)$                                                                               |
 | tan           | $\frac{d}{dx} [\tan (x)] = \frac{d}{dx} \left [\frac{\sin(x)}{\cos(x)} \right] = \frac{1}{\cos^2(x)} = \sec^2(x)$  |
@@ -122,7 +153,7 @@ $$
 | sec           | $\frac{d}{dx} [\sec (x)] = \frac{\sin(x)}{\cos^2(x)} = \sec(x) \cdot \tan(x)$                                      |
 
 | Two Special Trigonometric Limits                         |
-|----------------------------------------------------------|
+| -------------------------------------------------------- |
 | $\lim_{\theta \to 0} \frac{\sin \theta}{\theta} = 1$     |
 | $\lim_{\theta \to 0} \frac{\cos \theta - 1}{\theta} = 0$ |
 
@@ -223,7 +254,7 @@ $$ a(t) = v'(t) = x''(t) $$
 - Acceleration: The instantaneous rate of change of _velocity_ with respect to time.
 
 | Velocity | Acceleration | Speed      |
-|----------|--------------|------------|
+| -------- | ------------ | ---------- |
 | Positive | Positive     | Increasing |
 | Negative | Negative     | Increasing |
 | Positive | Negative     | Decreasing |
@@ -313,10 +344,10 @@ either $f'(c) = 0$ or $f'(c)$ does not exist.
 
 ## Intervals on which a function is increasing or decreasing
 
-| $f'$'s status               |     | which means $f$   |
-|-----------------------------|:---:|-------------------|
-| $f' > 0$ ($f'$ is positive) | <=> | $f$ is increasing |
-| $f' < 0$ ($f'$ is negative) | <=> | $f$ is decreasing |
+| $f'$'s status               |       | which means $f$   |
+| --------------------------- | :---: | ----------------- |
+| $f' > 0$ ($f'$ is positive) |  <=>  | $f$ is increasing |
+| $f' < 0$ ($f'$ is negative) |  <=>  | $f$ is decreasing |
 
 - The intervals where the derivative $f'$ is positive (i.e., above the $x$-axis) are
   the intervals where the function $f$ is increasing.
@@ -372,11 +403,11 @@ maximum and a minimum on the interval.
 Concave up if the $f'$ increases, concave down if $f'$ decreases.
 
 | **Concave up**        | equivalent to |              |
-|-----------------------|:-------------:|--------------|
+| --------------------- | :-----------: | ------------ |
 | $g'(x)$ is increasing |      =>       | $g''(x) > 0$ |
 
 | **Concave down**      | equivalent to |              |
-|-----------------------|:-------------:|--------------|
+| --------------------- | :-----------: | ------------ |
 | $g'(x)$ is decreasing |      =>       | $g''(x) < 0$ |
 
 ## Inflection point (拐点)
